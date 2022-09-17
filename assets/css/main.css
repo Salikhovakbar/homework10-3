@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: gold;
+}
+#btn{
+    padding: 8px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 7px;
+    color: white;
+}
+#btn:hover{
+    background-color: aqua;
+    transition: 1s;
+    cursor: pointer;
+}
+input{
+    border-radius: 5px;
+    border: 1px dotted dodgerblue;
+}
+select{
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
+select:hover{
+ transition: 1.5s;
+ cursor: pointer;
+    background-color: rgb(51, 48, 48);
+}
+#THEME{
+    background-color: orangered;
+    border-radius: 10px;
+    animation-name: go;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    font-family: sans-serif;
+}
+@keyframes go{
+    to{
+        transform: translateX(230px)skew(20deg);
+        background-color: aqua;
+    }
+}
